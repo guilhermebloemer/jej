@@ -1,0 +1,277 @@
+ html {
+    scroll-behavior: smooth;
+}
+.menu-mobile {
+    display: none;
+}
+body {
+    -webkit-user-select: none;
+    -ms-user-select: none;     
+    user-select: none;        
+    }
+header {
+
+display: flex;
+justify-content: space-between;
+background: #6C6C6C;
+padding: 1vw 2vw 1vw 2vw;
+align-items: center;
+}
+header div {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+header p {
+    color: white;
+}
+header h1{
+    font-size: 30px;
+    color: white;
+ 
+}
+header nav ul{
+    display: flex;
+    gap: 2vw;
+  
+}
+header nav ul li a{
+color: white;
+}
+
+
+main h1 {
+    text-align: center;
+    font-size: 180px;
+  font-family: "Cormorant SC";
+  padding: 3vw;
+}
+main div.banner{
+    background: url(../src/photo-1590516554327-3c42f1d8f6cf.avif) no-repeat;
+    background-size: 100% auto;
+    color: white;
+font-size: 20px;
+text-align: center;
+padding: 11vw;
+}
+main div p {
+    margin-bottom: 1vw;
+    line-height: 1.5vw;
+}
+
+.galeria{
+  list-style:none;
+  padding:0;
+  margin: 3vw;
+  display:grid;
+  grid-template-columns:repeat(2, 380px );
+  gap: 3vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria li{
+  position:relative;
+  border-radius:15px;
+  overflow:hidden;
+}
+
+.galeria img{
+  width:100%;
+  height:460px;
+
+  display:block;
+}
+
+.galeria p{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  color:white;
+  font-size:28px;
+  letter-spacing:2px;
+  margin:0;
+  text-align: center;
+}
+
+main div.banner2 {
+    background: url(../src/pexels-scottwebb-7187338.jpg) no-repeat;
+        background-size: 100% auto;
+    justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+
+main div.banner2 h2 {
+ font-size: 28px;
+ padding-top: 10vw;
+ color: white;
+}
+
+.banner2 p {
+    font-size: 20px;
+    line-height: 1.5vw;
+    padding-top: 4vw;
+    color: white;
+    padding-bottom: 2vw;
+}
+button {
+    padding: 1vw 3vw 1vw 3vw;
+    border: none;
+    border-radius: 25px;
+    background: #3f3d22;
+    color: white;
+    margin-bottom: 4vw;
+    cursor: pointer;
+}
+
+.contato {
+    background: #5F6247;
+    text-align: center;
+    justify-content: center;
+    padding: 6vw;
+      align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato h3 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 2vw;
+ 
+}
+
+.contato a {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    width: auto;
+    margin-bottom: 2vw;
+   
+}
+
+.contato i {
+     margin-right: 5px;
+     font-size: 25px;
+}
+.icone-insta {
+    transform: translateY(3px);
+}
+
+footer {
+    background: #D3D5C1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2vw;
+}
+
+footer h4 {
+    font-size: 35px;
+}
+
+footer p {
+    font-size: 20px;
+    line-height: 2vw
+
+}
+
+
+@media (max-width: 768px) {
+    
+  html {
+    scroll-behavior: smooth;
+}
+   .menu-mobile {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+header nav {
+    display: none; 
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    background: #6C6C6C;
+    z-index: 1000;
+}
+
+
+header nav.active {
+    display: block;
+}
+
+header nav ul {
+    flex-direction: column; 
+    gap: 0;
+}
+
+header nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid #c9c6c6;
+    border-top: 1px solid #c9c6c6;
+    text-align: center;
+}
+    
+    main h1 {
+        font-size: 50px;
+        padding: 10vw 5vw;
+    }
+
+  
+    main div.banner, main div.banner2 {
+        background-size: cover;
+        padding: 20vw 5vw;
+    }
+
+    main div.banner p, .banner2 p {
+    
+     line-height: 5vw;
+    }
+
+    .banner2 button {
+        padding: 3vw;
+    }
+    
+    .galeria {
+        grid-template-columns: 1fr;
+        margin: 5vw;
+        gap: 5vw;
+    }
+
+    .the-details {
+      line-height: 6vw;
+    }
+
+    .contato i {
+        font-size: 20px;
+    }
+    
+    .contato h3 {
+        font-size: 30px;
+    }
+
+    .contato a {
+        font-size: 20px;
+        margin-bottom: 5vw;
+    }
+
+   
+    footer p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+

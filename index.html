@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JeJ</title>
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+   
+  <header>
+    <div>
+        <h1>J&J</h1> <p>June 23rd, 2025</p>
+    </div>
+    
+    <button class="menu-mobile" id="btn-menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+   <nav id="nav-menu">
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#our-story">OUR STORY</a></li>
+        <li><a href="#details">DETAILS</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+    </ul>
+</nav>
+</header>
+    <main>
+        <h1>JENNY & JASON</h1>
+        <section>
+
+        <div class="banner">
+       
+            <p>
+                With love and gratitude, we invite you to <br>share in the joy of our wedding day.
+            </p>
+            <p>
+                Saturday, September 20, 2025 <br> The Golden Elm Manor, <br>St. Augustine, New York
+            </p>
+        </div>
+        </section>
+        <section class="conjunto">
+            <div>
+
+              <ul class="galeria">
+    <li class="our" id="our-story">
+        <img src="src/image 2.png" alt="">
+        <p>OUR STORY</p>
+    </li>
+
+    <li class="details" id="details">
+        <img src="src/pexels-iriser-1379636.jpg" alt="">
+        <p class="the-details">THE DETAILS</p>
+    </li>
+
+    <li class="rsvp" id="rsvp">
+        <img src="src/pexels-elias-tigiser-411757-9088004.jpg" alt="">
+        <p>RSVP</p>
+    </li>
+
+    <li class="registry">
+        <img src="src/image 5.png" alt="">
+        <p>REGISTRY</p>
+    </li>
+</ul>
+            </div>
+        </section>
+
+        <div class="banner2">
+           
+            
+            <h2>REGISTRY</h2>
+            <p>
+                Your presence is the most cherished gift. Should you wish to <br> contribute, we’ve created a honeymoon registry to help us <br>embark on a memorable adventure to the Amalfi Coast
+            </p>
+           <a href="#">
+            <button>GO TO REGISTRY</button>
+           </a>
+
+        </div>
+
+        <div class="contato">
+            <h3>CONTACT US</h3> 
+
+          <a href="#"><i class="fa-solid fa-at icone-insta"></i>guilhermebloemer</a>
+
+          <a href="#"><i class="fa-brands fa-whatsapp"></i>47 98857-0734</a>
+        </div>
+    </main>
+    <footer>
+    <h4>J&J</h4>
+    <p>SATURDAY, <br>SEPTEMBER 20, 2025</p>
+    </footer>
+
+     <script>
+    const btnMenu = document.getElementById('btn-menu');
+const nav = document.getElementById('nav-menu');
+const links = document.querySelectorAll('#nav-menu a'); // Seleciona todos os links do menu
+
+
+btnMenu.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('active');
+    });
+});
+</script>
+
+</body>
+</html>
